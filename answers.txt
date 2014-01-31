@@ -1,0 +1,11 @@
+1. What are the contents of the options variable? 
+options = {"memory", "assembly", "compiler", "custom"}
+
+2. Describe what is wrong with this section of code
+return options[-1] is out of the range of the array. The option 4 will also not work. It must become return options[choice-1]
+
+For questions 3 and 4 I unfortunately deleted the section of sample data (the garbage) that was in repository . cpp before I realized I needed it to answer these questions. The data was an array with {1, 2, 3} in it followed by a large number. 
+3. 
+4. 
+
+5. Such a high number will throw off the array. For whatever reason, the array might freak out. 

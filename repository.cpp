@@ -1,6 +1,6 @@
 #include "repository.h"
 #include <iostream>
-//#include <curl/curl.h>
+#include <curl/curl.h>
 
 using namespace std;
 
@@ -61,11 +61,6 @@ Article Repository::getArticleForQuery(std::string title)
 	Article article;
 	article.title = title;
 	article.body = data;
-
-	// Sample Data
-	int array [] = { 1, 2, 3 };
-	int sampleData = array[23423];
-	article.body = sampleData;
 
 	return article;
 }

@@ -2,7 +2,7 @@
 #include "view.h"
 #include "article.h"
 
-//using namespace std;
+using namespace std;
 
 std::string View::drawSearch()
 {
@@ -34,15 +34,15 @@ std::string View::drawMenu()
 	std::cout << "Select a menu option:\n";
 
 	int choice = 1;
-	do {
-		if(std::cin.fail() || choice <= 0 || choice > 4)
-		{
-			std::cin.clear();
-			std::cin.ignore(100, '\n');
-			std::cout << "Select a menu option:\n";
-		}
-		std::cin >> choice
-	} while(choice <= 0 || choice > 4);
+    do {
+        if(std::cin.fail() || choice <= 0 || choice > 4)
+        {
+            std::cin.clear();
+            std::cin.ignore(100, '\n');
+            std::cout << "Select a menu option:\n";
+        }
+        std::cin >> choice; 
+    } while(choice <= 0 || choice > 4);  
 
-	return options[-1];
+    return options[choice-1];
 }
